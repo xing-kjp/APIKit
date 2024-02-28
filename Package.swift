@@ -14,7 +14,8 @@ let package = Package(
         .target(
             name: "APIKit", 
             dependencies: [],
-            exclude: ["BodyParameters/AbstractInputStream.m"]
+            exclude: ["BodyParameters/AbstractInputStream.m"],
+            resources: [.copy("PrivacyInfo.xcprivacy")]
         ),
          .testTarget(
             name: "APIKitTests",
